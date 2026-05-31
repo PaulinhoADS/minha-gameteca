@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titulo": "Formula Legends",
+    "plataforma": "PC",
+    "genero": "Corrida"
+  },
+  {
+    "id": 2,
+    "titulo": "Sonic Generations",
+    "plataforma": "Xbox 360",
+    "genero": "Aventura"
+  },
+  {
+    "id": 3,
+    "titulo": "God of War",
+    "plataforma": "PlayStation",
+    "genero": "Ação"
+  },
+  {
+    "id": 4,
+    "titulo": "EA Sports FC 26",
+    "plataforma": "Nintendo Switch",
+    "genero": "Futebol"
+  }
+]
