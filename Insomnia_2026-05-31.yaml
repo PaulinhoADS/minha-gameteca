@@ -1,0 +1,184 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Gameteca
+meta:
+  id: wrk_0fc04201ab1c40eda19dc8ef3f9da3ca
+  created: 1780255836715
+  modified: 1780256007150
+  description: ""
+collection:
+  - url: http://localhost:3001/jogos
+    name: 1. GET - Listar Jogos
+    meta:
+      id: req_6eb9879c8977448c8e05c83c778090ec
+      created: 1780255836735
+      modified: 1780255903299
+      isPrivate: false
+      description: ""
+      sortKey: -1780255836735
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.6.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3001/jogos
+    name: 2. POST - Cadastrar Jogo
+    meta:
+      id: req_2c253b7a291149afbefa24e042b43102
+      created: 1780256020745
+      modified: 1780256159475
+      isPrivate: false
+      description: ""
+      sortKey: -1780256020745
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "titulo": "EA Sports FC 26",
+            "plataforma": "Nintendo Switch",
+            "genero": "Futebol"
+          }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.6.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3002/usuarios
+    name: 3. GET - Listar Usuários
+    meta:
+      id: req_030694a65aae497981af0edac1ac6937
+      created: 1780256223583
+      modified: 1780256281889
+      isPrivate: false
+      description: ""
+      sortKey: -1780256223583
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.6.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/biblioteca
+    name: 4. POST - Associar Jogo ao user 2 na Biblioteca
+    meta:
+      id: req_bdb1930bec9f49808c1ca7f383debc83
+      created: 1780256345702
+      modified: 1780257034983
+      isPrivate: false
+      description: ""
+      sortKey: -1780256345702
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"usuarioId": 2, 
+        	"jogoId": 3
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.6.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/biblioteca/1
+    name: 5. GET - Ver Biblioteca do Usuário 1
+    meta:
+      id: req_d53515062d7f4953b80b040c265fcd4d
+      created: 1780256835282
+      modified: 1780257061977
+      isPrivate: false
+      description: ""
+      sortKey: -1780256835282
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.6.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/biblioteca/2
+    name: 6. GET - Ver Biblioteca do Usuário 2
+    meta:
+      id: req_aabfdf9a9ecf49cd9f9a9a5adc471bbd
+      created: 1780257102262
+      modified: 1780257184490
+      isPrivate: false
+      description: ""
+      sortKey: -1780257102262
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.6.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_12d21be026e9722cb3f506cdfaf469a956377858
+    created: 1780255836727
+    modified: 1780255836727
+environments:
+  name: Base Environment
+  meta:
+    id: env_12d21be026e9722cb3f506cdfaf469a956377858
+    created: 1780255836725
+    modified: 1780255836725
+    isPrivate: false
