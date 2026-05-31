@@ -27,7 +27,7 @@ As portas utilizadas são:
 
 ---
 
-## 🧠 Reflexão Obrigatória
+## Reflexão Obrigatória
 
 **1. O que acontece com a biblioteca se o catalogo-service estiver fora do ar? E se for o usuarios-service?**
 Se o `catalogo-service` cair, a biblioteca não conseguirá ir buscar os detalhes dos jogos associados ao usuário. Se o `usuarios-service` cair, a biblioteca não conseguirá identificar quem é o usuário logo no início do processo. Em qualquer situação dessas, como a biblioteca depende da composição dos dados de todos os serviços, o processo é interrompido. No código criado, foi implementado um tratamento (`try/catch` com axios) e se isto acontecer, a aplicação não bloqueia de forma brusca, retornando um erro `503 Service Unavailable` com uma mensagem amigável ao cliente.
